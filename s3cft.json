@@ -15,12 +15,6 @@
             ]
         }
     },
-    "Parameters": {
-        "bucketName": {
-            "Description": "Bucket Name",
-            "Type": "String"
-        }
-    },
     "Resources": {
         "S3BucketDemo": {
             "Type": "AWS::S3::Bucket",
