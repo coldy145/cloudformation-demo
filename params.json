@@ -1,0 +1,26 @@
+[
+        {
+            "ParameterKey": "S3BucketName",
+            "ParameterValue": "hello-world-demo-s3-creation-145"
+        },
+        {
+            "ParameterKey": "LambdaHandler",
+            "ParameterValue": "index.handler"
+        },
+        {
+            "ParameterKey": "LambdaExecutionRoleArn",
+            "ParameterValue": "arn:aws:iam::312345678910:role/LambdaExecuteRole"
+        },
+        {
+            "ParameterKey": "LambdaSourceBucket",
+            "ParameterValue": "test-lambda-functions"
+        },
+        {
+            "ParameterKey": "LambdaSourceKey",
+            "ParameterValue": "helloworld.zip"
+        },
+        {
+            "ParameterKey": "LambdaSubnetID",
+            "ParameterValue": "subnet-1113121f,subnet-fer333ex"
+        }
+]
