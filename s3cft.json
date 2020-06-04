@@ -1,16 +1,35 @@
 {
     "AWSTemplateFormatVersion": "2010-09-09",
-    "Resources": {
-        "S3Bucket": {
-            "Type": "AWS::S3::Bucket"
+    "Description": "Create SLF standardized s3 bucket",
+    "Metadata": {
+        "AWS::CloudFormation::Interface": {
+            "ParameterGroups": [
+                {
+                    "Label": {
+                        "default": "s3 Bucket Configuration"
+                    },
+                    "Parameters": [
+                        "bucketName"
+                    ]
+                }
+            ]
         }
     },
-    "Outputs": {
-        "BucketName": {
-            "Value": {
-                "Ref": "S3Bucket"
-            },
-            "Description": "Name of the sample Amazon S3 bucket."
+    "Parameters": {
+        "bucketName": {
+            "Description": "Bucket Name",
+            "Type": "String"
+        }
+	},
+    "Resources": {
+        "S3BucketDemo": {
+            "Type": "AWS::S3::Bucket",
+            "DeletionPolicy": "Retain",
+            "Properties": {                
+                "BucketName": {
+                    "Ref": "bucketName"
+                }
+            }
         }
     }
 }
