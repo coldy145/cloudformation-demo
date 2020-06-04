@@ -1,6 +1,6 @@
 {
     "AWSTemplateFormatVersion": "2010-09-09",
-    "Description": "Create SLF standardized s3 bucket",
+    "Description": "Create standardized s3 bucket",
     "Metadata": {
         "AWS::CloudFormation::Interface": {
             "ParameterGroups": [
