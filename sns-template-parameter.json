@@ -1,6 +1,6 @@
 {
   "Parameters" : {
-    "SNSEmail" : "aws_is_best@email.com",
-    "S3Bucket" : "codepipeline-coldy-test"
+    
+    "S3Bucket" : "codepipeline-coldy-test-145"
   }
 }  
